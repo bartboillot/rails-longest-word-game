@@ -1,2 +1,9 @@
-<%= @is_world_real %>
-<%= params[:letters] %>
+<div class="container">
+  <h1>Result</h1>
+  <p>  <%=@result.html_safe%> </p>
+  <p> You've won <%= @increment %> point</p>
+  <%= link_to "Play Again", new_path %>
+</div>
+
+
+
